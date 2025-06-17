@@ -9,7 +9,11 @@ dotenv.config();
 
 connectDB();
 
-const app = express();
+app.use(cors({
+  origin: ["http://localhost:3000", "https://inventory-task.onrender.com"],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true,
+}));
 
 app.use(cors());
 app.use(express.json());
