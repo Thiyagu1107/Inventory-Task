@@ -1,5 +1,5 @@
-import Item from '../models/ItemModel.js';
-import Consumption from '../models/ConsumptionLogModel.js';
+import Item from '../Models/ItemModel.js';
+import Consumption from '../Models/ConsumptionLogModel.js';
 
 
 export const createItem = async (req, res) => {
